@@ -20,4 +20,5 @@ Quanto mais aumentamos o número de subintervalos, ou seja, o Δx (que represent
 3. Insira o limite inferior de integração (valor de x inicial da função)
 4. Insira o limite Superior de integração (valor de x final da função)
 5. Insira a margem de erro desejada para o código
+
 Pronto! Após isso, aguarde o resultado aproximado e veja o número de subdivisões necessárias para chegar nesse resultado!!
