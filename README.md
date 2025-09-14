@@ -13,3 +13,11 @@ Temos a ideia geral da integral definida, com base no livro de James Stewart, co
 Dada uma função f contínua definida em a ≤ x ≤ b de intervalo, dividimos o intervalo [a, b] em n subintervalos de valor Δx = (b-a)/n. Em seguida escolhemos, aleatoriamente, um ponto xi* e calculamos a soma de f(xi*)Δx. Quando n tende ao infinito, o valor da aproximação feita pelo método das somas de Riemann tende ao valor exato da integral definida. Desde que o limite exista e dê o mesmo valor para todas as possíveis escolhas de pontos xi*. Se ele existir, dizemos que f é integrável em [a, b].
 
 Quanto mais aumentamos o número de subintervalos, ou seja, o Δx (que representa o valor da base desses retângulos) diminui, melhor se aproxima o valor da soma das áreas dos retângulos da área real (valor representado na cor rosa da figura abaixo).
+
+## Como utilizar o código?
+1. Rode o código em seu ambiente (disponível no Google Colab)
+2. Insira o valor da função da qual deseja calcular a integral
+3. Insira o limite inferior de integração (valor de x inicial da função)
+4. Insira o limite Superior de integração (valor de x final da função)
+5. Insira a margem de erro desejada para o código
+Pronto! Após isso, aguarde o resultado aproximado e veja o número de subdivisões necessárias para chegar nesse resultado!!
