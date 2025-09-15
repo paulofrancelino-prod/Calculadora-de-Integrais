@@ -1,24 +1,51 @@
-# Calculadora de integrais com soma de Riemann
+# 📐 Calculadora de Integrais com Soma de Riemann  
 
-## Introdução da ideia do código:
-O código mostrado aqui tem como objetivo calcular o valor aproximado de algumas integrais definidas dados como input pelo usuário, bem como o intervalo de integração. O código também define uma margem de erro aceitável para a aproximação. Para essa aplicação, a margem de erro utilizada foi de 10^-6.
+Este projeto tem como objetivo **calcular o valor aproximado de integrais definidas** a partir de uma função e de um intervalo dados pelo usuário. O cálculo é feito utilizando o método da **Soma de Riemann**, com margem de erro ajustável.  
 
-## A ideia geral da integral:
-Podemos, de forma mais resumida, definir a ideia geral da integral pelo objetivo de calcular a área abaixo da curva de uma função f(x).  
-Dado esse objetivo, surgem algumas maneiras de se calcular essas áreas abaixo dessas funções, de tal maneira que é possível computar um valor aproximado para as integrais dessas funções. Por meio dessa série, abordando o conceito da aproximação desses valores por meio da soma de Riemann, destaco dessa aplicação em código python.
+---
 
-## Conceito de integral pela soma de Riemann:
-Temos a ideia geral da integral definida, com base no livro de James Stewart, como sendo a seguinte:  
+## 📌 Introdução  
 
-Dada uma função f contínua definida em a ≤ x ≤ b de intervalo, dividimos o intervalo [a, b] em n subintervalos de valor Δx = (b-a)/n. Em seguida escolhemos, aleatoriamente, um ponto xi* e calculamos a soma de f(xi*)Δx. Quando n tende ao infinito, o valor da aproximação feita pelo método das somas de Riemann tende ao valor exato da integral definida. Desde que o limite exista e dê o mesmo valor para todas as possíveis escolhas de pontos xi*. Se ele existir, dizemos que f é integrável em [a, b].
+A integral definida pode ser interpretada como a **área sob a curva** de uma função \( f(x) \).  
+Para aproximar esse valor, existem diversos métodos numéricos, sendo a **Soma de Riemann** um dos mais clássicos e didáticos.  
 
-Quanto mais aumentamos o número de subintervalos, ou seja, o Δx (que representa o valor da base desses retângulos) diminui, melhor se aproxima o valor da soma das áreas dos retângulos da área real (valor representado na cor rosa da figura abaixo).
+Neste projeto em Python, implementamos esse conceito para obter aproximações numéricas com uma margem de erro configurável (neste caso, 10e-6)
 
-## Como utilizar o código?
-1. Rode o código em seu ambiente (disponível no Google Colab)
-2. Insira o valor da função da qual deseja calcular a integral
-3. Insira o limite inferior de integração (valor de x inicial da função)
-4. Insira o limite Superior de integração (valor de x final da função)
-5. Insira a margem de erro desejada para o código
+---
 
-Pronto! Após isso, aguarde o resultado aproximado e veja o número de subdivisões necessárias para chegar nesse resultado!!
+## 📖 Conceito Teórico  
+
+Temos a ideia geral da integral definida, com base no livro de James Stewart, como sendo a seguinte: Dada uma função f contínua definida em a ≤ x ≤ b de intervalo, dividimos o intervalo [a, b] em n subintervalos de valor Δx = (b-a)/n. Em seguida escolhemos, aleatoriamente, um ponto xi* e calculamos a soma de f(xi*)Δx. Quando n tende ao infinito, o valor da aproximação feita pelo método das somas de Riemann tende ao valor exato da integral definida. Desde que o limite exista e dê o mesmo valor para todas as possíveis escolhas de pontos xi*. Se ele existir, dizemos que f é integrável em [a, b]. Quanto mais aumentamos o número de subintervalos, ou seja, o Δx (que representa o valor da base desses retângulos) diminui, melhor se aproxima o valor da soma das áreas dos retângulos da área real (valor representado na cor rosa da figura abaixo).
+
+## ⚙️ Como o Código Funciona?  
+
+O código:  
+- Recebe a função \( f(x) \) como **input** do usuário.  
+- Solicita os limites de integração \( a \) e \( b \).  
+- Define uma **margem de erro** para a aproximação.  
+- Calcula a soma de Riemann com subdivisões sucessivas até alcançar o erro especificado.  
+
+---
+
+## ▶️ Como Usar?  
+
+1. Rode o código no seu ambiente Python (ou no [Google Colab](https://colab.research.google.com/)).  
+2. Insira:  
+   - A função \( f(x) \)  
+   - O limite inferior \( a \)  
+   - O limite superior \( b \)  
+   - A margem de erro desejada  
+3. Aguarde o resultado:  
+   - O valor aproximado da integral  
+   - O número de subdivisões utilizadas  
+
+---
+
+## 📊 Exemplo de Uso  
+
+Entrada:  
+```python
+f(x) = x**2
+a = 0
+b = 1
+erro = 1e-6
